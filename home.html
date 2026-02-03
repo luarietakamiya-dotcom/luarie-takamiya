@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPL Top</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific overrides for the frame content if needed */
+        body {
+            /* Ensure content fits nicely in the frame */
+            padding-top: 40px;
+        }
+
+        /* Hide sidebar/header adjustments from global CSS if they interfere, 
+           but since style.css assumes margin-left: 260px for 'main', 
+           we might need to reset that if this page is INSIDE an iframe 
+           that is already positioned. 
+           
+           Actually, style.css line 143: main { margin-left: 260px; }
+           Inside an iframe, the window width is just the iframe width.
+           We want 0 margin inside the iframe.
+        */
+        main {
+            margin-left: 0 !important;
+        }
+
+        body {
+            /* Background handles itself */
+        }
+    </style>
+</head>
+
+<body class="theme-label">
+    <a href="#" id="lang-toggle">EN</a>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <!-- Hero Section -->
+        <section class="label-hero" style="text-align:center; padding: 100px 0 60px;">
+            <!-- Logo removed per user request (background used instead) -->
+            <p class="fade-in"
+                style="font-family:'Cormorant Garamond'; font-size:1.5rem; letter-spacing:0.1em; padding-top:40px;">
+                Where
+                Digital Dreams Resonate.</p>
+        </section>
+
+        <!-- Intro -->
+        <section class="container fade-in" style="text-align:center; margin-bottom:100px;">
+            <h2 style="font-size:2rem; margin-bottom:30px; font-weight:300; letter-spacing:0.1em;">Celestial Pulse Line
+            </h2>
+            <p style="line-height:2.2; color:#666;">
+                <span class="lang-ja">音楽とビジュアルを、ひとつの作品体験として編み上げるクリエイティブレーベル。<br>
+                    テクノロジーは道具。公開する作品の最終責任と美意識は、人が持ちます。</span>
+                <span class="lang-en">We weave music and visuals into a single artistic experience.<br>
+                    Technology is a tool. Humans hold the final responsibility and aesthetic sense for the work we
+                    release.</span>
+            </p>
+            <div class="cpl-cta">
+                <a class="cpl-btn" href="home.html#policy">Policy</a>
+                <a class="cpl-btn" href="home.html#contact">Contact</a>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section class="section fade-in" style="background:#f4f4f2;">
+            <div class="container">
+                <div style="display:flex; flex-wrap:wrap; gap:60px; justify-content:center;">
+                    <div style="flex:1; min-width:300px;">
+                        <h3
+                            style="font-family:'Cormorant Garamond'; font-size:1.8rem; color:#8C8C88; margin-bottom:20px;">
+                            Mission</h3>
+                        <p style="color:#2C2C2C; margin-bottom:15px; font-weight:400;">
+                            <span class="lang-ja">聴くだけで終わらない、心に残る作品体験をつくる。</span>
+                            <span class="lang-en">Creating an artistic experience that lingers in the heart, not just
+                                ends with listening.</span>
+                        </p>
+                        <p style="color:#666; font-size:0.95rem;">
+                            <span class="lang-ja">曲・言葉・ビジュアルをひとつに束ね、継続して育つ表現を届けます。</span>
+                            <span class="lang-en">Bundling songs, words, and visuals into one, delivering expression
+                                that grows continuously.</span>
+                        </p>
+                    </div>
+                    <div style="flex:1; min-width:300px;">
+                        <h3
+                            style="font-family:'Cormorant Garamond'; font-size:1.8rem; color:#8C8C88; margin-bottom:20px;">
+                            Values</h3>
+                        <ul style="list-style:none; padding:0; color:#666; line-height:2;">
+                            <li style="margin-bottom:15px;">
+                                <strong style="color:#2C2C2C;">
+                                    <span class="lang-ja">作品の芯を最優先</span>
+                                    <span class="lang-en">Core of the Work First</span>
+                                </strong><br>
+                                <span class="lang-ja">感情・美意識・世界観の一貫性を守る</span>
+                                <span class="lang-en">Protecting the consistency of emotion, aesthetics, and
+                                    worldview.</span>
+                            </li>
+                            <li style="margin-bottom:15px;">
+                                <strong style="color:#2C2C2C;">
+                                    <span class="lang-ja">継続性</span>
+                                    <span class="lang-en">Continuity</span>
+                                </strong><br>
+                                <span class="lang-ja">単発よりも「シリーズとして育つリリース」を重視する</span>
+                                <span class="lang-en">Prioritizing "releases that grow as a series" over
+                                    one-offs.</span>
+                            </li>
+                            <li style="margin-bottom:15px;">
+                                <strong style="color:#2C2C2C;">
+                                    <span class="lang-ja">透明性と敬意</span>
+                                    <span class="lang-en">Transparency and Respect</span>
+                                </strong><br>
+                                <span class="lang-ja">制作・権利・クレジットを誠実に扱う</span>
+                                <span class="lang-en">Handling production, rights, and credits sincerely.</span>
+                            </li>
+                            <li>
+                                <strong style="color:#2C2C2C;">
+                                    <span class="lang-ja">品質責任</span>
+                                    <span class="lang-en">Quality Responsibility</span>
+                                </strong><br>
+                                <span class="lang-ja">公開物は必ず人が確認し、最終判断を行う</span>
+                                <span class="lang-en">Humans always check and make the final decision on released
+                                    materials.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story -->
+        <section class="container fade-in" style="text-align:center; padding:100px 40px;">
+            <h3 style="font-family:'Cormorant Garamond'; font-size:2rem; margin-bottom:40px; color:#BFA57D;">Story</h3>
+            <p style="line-height:2.4; color:#666; font-style:italic;">
+                <span class="lang-ja">
+                    CPLの作品は、ひとつの世界から生まれるというより、<br>
+                    いくつもの光（曲・言葉・ビジュアル）が集まって、ひとつの脈動になる。<br>
+                    その“脈”を、丁寧に残していきます。
+                </span>
+                <span class="lang-en">
+                    CPL's works are not born from a single world,<br>
+                    but rather, many lights (songs, words, visuals) gather to become a single pulse.<br>
+                    We will carefully preserve that "pulse".
+                </span>
+            </p>
+        </section>
+
+        <!-- Interactive Discography (Existing) -->
+        <section class="discography container fade-in" style="margin-bottom:120px;">
+            <h2 style="font-family:'Cormorant Garamond'; font-size:2rem; text-align:center; margin-bottom:60px;">Latest
+                Works</h2>
+            <div id="music-player" class="music-player">
+                <!-- Javascript will inject player here -->
+            </div>
+        </section>
+
+        <!-- Collaboration & Work -->
+        <section class="section fade-in"
+            style="background:#fff; border-top:1px solid #eee; border-bottom:1px solid #eee;">
+            <div class="container">
+                <h3 style="font-family:'Cormorant Garamond'; font-size:1.8rem; text-align:center; margin-bottom:50px;">
+                    Collaboration / Work</h3>
+                <div style="max-width:800px; margin:0 auto; color:#666;">
+                    <p style="margin-bottom:20px;">
+                        <span class="lang-ja">CPLは以下のご相談に対応します（内容により要相談）。</span>
+                        <span class="lang-en">CPL accepts the following consultations (details to be discussed).</span>
+                    </p>
+                    <ul style="margin-bottom:40px; list-style:circle; padding-left:20px;">
+                        <li>
+                            <span class="lang-ja">楽曲制作／歌詞制作／ボーカル提供（企画・用途に合わせて設計）</span>
+                            <span class="lang-en">Songwriting / Lyrics / Vocal Provision (Designed for purpose)</span>
+                        </li>
+                        <li>
+                            <span class="lang-ja">ジャケット／サムネ／プロモ用ビジュアル</span>
+                            <span class="lang-en">Visuals for Jackets / Thumbnails / Promos</span>
+                        </li>
+                        <li>
+                            <span class="lang-ja">シリーズ企画（継続投稿・世界観設計・制作運用）</span>
+                            <span class="lang-en">Series Planning (Continuous posting, Worldview design,
+                                Production)</span>
+                        </li>
+                    </ul>
+                    <p style="font-size:0.9rem; background:#FAFAF8; padding:20px; border-radius:4px;">
+                        <strong>
+                            <span class="lang-ja">ご相談時にあると助かる情報</span>
+                            <span class="lang-en">Helpful info for consultation</span>
+                        </strong><br>
+                        <span class="lang-ja">目的（配信／MV／タイアップ等）、希望納期、用途（商用/非商用）、予算感（任意）</span>
+                        <span class="lang-en">Purpose (Stream/MV/Tie-up), Deadline, Usage (Commercial/Non-commercial),
+                            Budget (Optional)</span><br>
+                        <span class="lang-ja">参考リンク（近い雰囲気の作品があれば）</span>
+                        <span class="lang-en">Reference Links (Similar vibe works)</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy -->
+        <!-- Policy -->
+        <section id="policy" class="container fade-in" style="padding:100px 40px 60px;">
+            <h3 style="font-family:'Cormorant Garamond'; font-size:2rem; text-align:center; margin-bottom:60px;">Policy
+            </h3>
+
+            <div
+                style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:50px; color:#666; font-size:0.95rem;">
+                <!-- 1. AI Usage -->
+                <div>
+                    <h4 style="color:#2C2C2C; margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:5px;">1)
+                        AI Usage Policy</h4>
+                    <p style="margin-bottom:10px;">
+                        <span class="lang-ja">CPLでは、制作補助としてAI技術を使用する場合があります（作編曲支援、音声生成、ビジュアル生成、アイデア整理など）。</span>
+                        <span class="lang-en">At CPL, we may use AI technology as production assistance (composition
+                            support, voice/visual generation, idea organization, etc.).</span>
+                    </p>
+                    <p>
+                        <span
+                            class="lang-ja">公開作品の最終判断・編集・品質管理は人が責任を持って行います。<br>依頼制作・共同制作においては、AI使用の可否／開示方針／成果物の範囲を事前にすり合わせます。</span>
+                        <span class="lang-en">Humans take responsibility for final judgment, editing, and quality
+                            control of published works.<br>In commissioned/joint production, we will align in advance on
+                            AI use, disclosure policy, and scope.</span>
+                    </p>
+                </div>
+
+                <!-- 2. Rights -->
+                <div>
+                    <h4 style="color:#2C2C2C; margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:5px;">2)
+                        Rights & Licensing</h4>
+                    <p>
+                        <strong>
+                            <span class="lang-ja">歓迎される利用（基本OK）</span>
+                            <span class="lang-en">Welcome Use (Basically OK)</span>
+                        </strong><br>
+                        <span class="lang-ja">作品の紹介・感想投稿（リンク推奨）、引用（常識的な範囲・出典明記）</span>
+                        <span class="lang-en">Introduction/impression posts (links recommended), Quotations (w/
+                            source)</span>
+                    </p>
+                    <p style="margin-top:10px;">
+                        <strong>
+                            <span class="lang-ja">原則NG（許諾が必要）</span>
+                            <span class="lang-en">Principle NG (Permission Required)</span>
+                        </strong><br>
+                        <span class="lang-ja">音源／映像／画像の転載・再アップロード、素材の再配布、商用利用、二次創作（商用・大規模）</span>
+                        <span class="lang-en">Reprinting/re-uploading sources, redistribution, commercial use,
+                            commercial secondary creation.</span>
+                    </p>
+                </div>
+
+                <!-- 3. Credits -->
+                <div>
+                    <h4 style="color:#2C2C2C; margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:5px;">3)
+                        Credits</h4>
+                    <p>
+                        <span class="lang-ja">作品ページに指定がある場合は、そちらに従ってください。<br>指定がない場合の推奨表記（YouTube概要欄など）：</span>
+                        <span class="lang-en">If specified on the work page, please follow it.<br>Recommended notation
+                            if not specified:</span>
+                    </p>
+                    <p
+                        style="font-family:monospace; font-size:0.8rem; background:#f4f4f2; padding:10px; margin-top:5px;">
+                        Credits / Vocal: Luarie Takamiya / Lyrics: Azure Locus / Music: Azure Locus / Label:
+                        CelestialPulse Line / Artwork: CPL Design / AI Music Tool: Suno</p>
+                </div>
+
+                <!-- 4. Safety -->
+                <div>
+                    <h4 style="color:#2C2C2C; margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:5px;">4)
+                        Safety / Report</h4>
+                    <p>
+                        <span class="lang-ja">権利侵害や不適切な掲載、誤情報、なりすまし等を発見した場合はご連絡ください。</span>
+                        <span class="lang-en">Please contact us if you discover rights infringement, inappropriate
+                            posting, misinformation, impersonation, etc.</span>
+                    </p>
+                    <p style="margin-top:5px;">
+                        <span class="lang-ja">送ってほしい情報：該当URL、対象箇所、理由、連絡先<br>対応方針：確認のうえ、必要に応じて非公開化・修正・方針のご連絡を行います</span>
+                        <span class="lang-en">Info needed: URL, Target place, Reason, Contact info<br>Response: We will
+                            take action (make private/correct/contact) after confirmation.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <!-- Contact -->
+        <section id="contact" class="section fade-in" style="background:#2C2C2C; color:#fff; text-align:center;">
+            <div class="container">
+                <h3 style="font-family:'Cormorant Garamond'; font-size:2rem; color:#BFA57D; margin-bottom:30px;">Contact
+                </h3>
+                <p style="margin-bottom:30px; opacity:0.8;">
+                    <span class="lang-ja">用途に合わせてご連絡ください。</span>
+                    <span class="lang-en">Please contact us according to your purpose.</span>
+                </p>
+                <div
+                    style="display:inline-block; text-align:left; max-width:600px; margin:0 auto; opacity:0.8; font-size:0.9rem; line-height:1.8;">
+                    <span class="lang-ja">
+                        コラボ／依頼：制作内容・用途・希望納期・参考リンク<br>
+                        メディア／掲載：媒体名・掲載予定・必要素材<br>
+                        権利・報告：該当URL・対象箇所・理由
+                    </span>
+                    <span class="lang-en">
+                        Collab/Request: Content, Purpose, Deadline, Links<br>
+                        Media/Publication: Media name, Schedule, Required materials<br>
+                        Rights/Report: URL, Target place, Reason
+                    </span>
+                </div>
+                <p style="margin-top:40px; font-size:1.2rem; letter-spacing:1px; color:#fff;">
+                    celestialpulseline@gmail.com
+                </p>
+                <p style="font-size:0.8rem; opacity:0.5; margin-top:10px;">※返信目安：3営業日以内</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

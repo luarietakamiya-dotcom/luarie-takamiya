@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ISHTARの部屋</title>
+    <style>
+        body {
+            background-color: #E0F0FF;
+            background-image: radial-gradient(#ADD8E6 20%, transparent 20%),
+                radial-gradient(#ADD8E6 20%, transparent 20%);
+            background-position: 0 0, 10px 10px;
+            background-size: 20px 20px;
+            font-family: "MS Gothic", "Osaka", sans-serif;
+            color: #000080;
+            /* Navy Blue */
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #FF00FF;
+            /* Magenta */
+            text-shadow: 2px 2px #FFFF00;
+            margin-bottom: 10px;
+        }
+
+        .marquee-container {
+            background-color: #000080;
+            color: #FFFFFF;
+            width: 80%;
+            margin: 0 auto 20px auto;
+            border: 2px ridge #FFFFFF;
+        }
+
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 600px;
+            margin: 0 auto;
+            border: 5px ridge #0000FF;
+            padding: 20px;
+        }
+
+        .counter {
+            background-color: #000000;
+            color: #FF0000;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 5px;
+            border: 2px inset #CCCCCC;
+            display: inline-block;
+            letter-spacing: 5px;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 255, 0.75), rgba(0, 0, 0, 0));
+            margin: 20px 0;
+        }
+
+        a {
+            color: #0000FF;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        a:hover {
+            color: #FF0000;
+            cursor: move;
+            /* Retro cursor */
+        }
+
+        .construction {
+            border: 2px dashed #FFD700;
+            /* Gold */
+            background: #FFFFE0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="marquee-container">
+        <marquee scrollamount="5" direction="left">Welcome to ISHTAR's Homepage!! ようこそ、ISHTARの部屋へ……！！ ゆっくりしていってね！！！
+        </marquee>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to My Homepage</h1>
+
+        <p>あなたは <span class="counter">00001234</span> 人目のお客様です。</p>
+        <p style="font-size:0.8rem;">(Since 2026.2.3)</p>
+
+        <br>
+
+        <p class="blink" style="color:red; font-weight:bold; font-size:1.2rem;">
+            ※キリ番取り逃げ禁止※
+        </p>
+
+        <p>Sorry Japanese Only!</p>
+        <p>リンクフリーです！(バナーは直リンク禁止)</p>
+
+        <hr>
+
+        <h2>Category</h2>
+        <ul style="list-style-type: square; text-align:left; width:50%; margin:0 auto;">
+            <li><a href="#">Diary (工事中)</a></li>
+            <li><a href="#">BBS (掲示板)</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="mailto:example@example.com">Mail</a></li>
+        </ul>
+
+        <hr>
+
+        <div class="construction">
+            <h3>Music List</h3>
+            <p>🚧 現在工事中です 🚧</p>
+            <p>Under Construction...</p>
+            <p>Coming Soon!</p>
+        </div>
+
+        <br><br>
+        <p style="font-size:0.8rem;">Copyright (C) 2026 ISHTAR All Rights Reserved.</p>
+    </div>
+
+</body>
+
+</html>

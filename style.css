@@ -37,6 +37,7 @@ body {
 }
 
 /* Background Logo Motif (Watermark) */
+/* Background Logo Motif (Watermark) */
 body::before {
     content: '';
     position: fixed;
@@ -52,11 +53,15 @@ body::before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.12;
+    opacity: 0.07;
     /* Darker/More visible */
     z-index: -1;
     pointer-events: none;
     mix-blend-mode: multiply;
+}
+
+body.theme-label::before {
+    background-image: url('レーベルロゴ (2).png');
 }
 
 /* Background Spiral Motif (with center cutout for Logo) */
@@ -358,4 +363,103 @@ footer {
     mix-blend-mode: multiply;
     /* Ensures white background disappears */
     opacity: 0.8;
+}
+
+/* Iframe Content Overrides */
+header {
+    left: 0 !important;
+    width: 100% !important;
+}
+
+main {
+    margin-left: 0 !important;
+}
+
+footer {
+    margin-left: 0 !important;
+}
+
+/* CPL Home CTA */
+.cpl-cta {
+    margin-top: 34px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cpl-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(191, 165, 125, 0.55);
+    border-radius: 999px;
+    font-family: var(--font-heading);
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    background: transparent;
+    transition: 0.35s ease;
+}
+
+.cpl-btn:hover {
+    color: var(--accent-gold);
+    border-color: rgba(191, 165, 125, 0.95);
+    transform: translateY(-1px);
+}
+
+/* Language Switching */
+body:not(.en) .lang-en {
+    display: none !important;
+}
+
+body.en .lang-ja {
+    display: none !important;
+}
+
+/* Toggle Button Style */
+#lang-toggle {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 9999;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    border: 1px solid var(--accent-gold);
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s;
+}
+
+#lang-toggle:hover {
+    background: var(--accent-gold);
+    color: #fff;
+}
+
+/* Sidebar Sub-menus */
+.sidebar-subnav {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    /* Default closed */
+}
+
+.sidebar-subnav.open {
+    max-height: 500px;
+    /* Arbitrary large height */
+    margin-bottom: 15px;
+}
+
+.sidebar-subnav .sidebar-link {
+    padding-left: 15px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-left: 2px solid transparent;
+}
+
+.sidebar-subnav .sidebar-link:hover {
+    border-left-color: var(--accent-gold);
+    color: var(--accent-gold);
 }
