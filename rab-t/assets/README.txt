@@ -1,0 +1,1 @@
+RAB!T visual assets are embedded as optimized web images in the site build.
