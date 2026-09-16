@@ -1,238 +1,142 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial Pulse Line</title>
-    <link rel="stylesheet" href="style.css?v=2">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Lato:wght@300;400&display=swap"
-        rel="stylesheet">
-    <style>
-        /* Frame Shell Styles */
-        body {
-            overflow: hidden;
-            /* Main window no scroll, content scrolls in iframe/sidebar */
-            margin: 0;
-            font-family: 'Lato', sans-serif;
-            background-color: #FAFAF8;
-        }
-
-        /* Sidebar Styles (Restored & Fixed) */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 260px;
-            height: 100vh;
-            background: #FAFAF8;
-            border-right: 1px solid rgba(191, 165, 125, 0.3);
-            z-index: 1000;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            overflow-y: auto;
-            /* Enable scrolling for sidebar content */
-        }
-
-        /* Hide scrollbar for sidebar if desired, but functionality first */
-        .sidebar::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        .sidebar::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 2px;
-        }
-
-        .cpl-logo-sidebar {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 60px;
-            cursor: pointer;
-            transition: opacity 0.3s;
-            display: block;
-        }
-
-        .cpl-logo-sidebar:hover {
-            opacity: 0.7;
-        }
-
-        .sidebar-nav {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .sidebar-link {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
-            color: #2C2C2C;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            text-decoration: none;
-            transition: all 0.3s;
-            display: block;
-            margin-bottom: 5px;
-            white-space: nowrap;
-            /* Prevent wrapping on hover */
-        }
-
-        .sidebar-link:hover {
-            color: #BFA57D;
-            padding-left: 10px;
-        }
-
-        /* Iframe Styles */
-        .main-frame {
-            position: absolute;
-            top: 0;
-            left: 260px;
-            width: calc(100% - 260px);
-            height: 100vh;
-            border: none;
-            display: block;
-        }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 80px;
-                padding: 15px;
-            }
-
-            .cpl-logo-sidebar {
-                margin-bottom: 30px;
-                max-width: 100%;
-            }
-
-            .sidebar-logo {
-                text-align: center;
-            }
-
-            .main-frame {
-                left: 80px;
-                width: calc(100% - 80px);
-            }
-
-            .sidebar-link {
-                /* Maybe hide text or use icon, staying simple */
-                font-size: 0.7rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PETAL CODE — Luarie Takamiya Official Site. Music, stories, visuals and creative projects.">
+  <title>PETAL CODE | Luarie Official Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=petal1">
 </head>
+<body class="petal-site">
+  <header class="petal-header">
+    <a class="brand" href="#top" aria-label="PETAL CODE home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">PETAL CODE</span>
+    </a>
+    <nav class="petal-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#music">Music</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
 
-<body>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <div class="sidebar-logo">
-            <a href="home.html" target="content-frame">
-                <img src="レーベルロゴ (2).png" alt="CPL" class="cpl-logo-sidebar">
-            </a>
+  <main id="top">
+    <section class="petal-hero">
+      <div class="petal-orbit petal-orbit-a"></div>
+      <div class="petal-orbit petal-orbit-b"></div>
+      <div class="hero-inner fade-in">
+        <div class="hero-symbol" aria-hidden="true">
+          <span></span><span></span><span></span>
         </div>
-        <nav class="sidebar-nav">
-            <!-- CPL NAV -->
-            <div style="margin-bottom: 28px;">
-                <p style="font-size: 0.8rem; color: #999; margin-bottom: 10px;">CPL</p>
-                <a href="home.html" target="content-frame" class="sidebar-link">Home</a>
-                <a href="home.html#policy" target="content-frame" class="sidebar-link">Policy</a>
-                <a href="home.html#contact" target="content-frame" class="sidebar-link">Contact</a>
-            </div>
+        <p class="eyebrow">Luarie Official Site</p>
+        <h1>PETAL CODE</h1>
+        <p class="hero-copy">Music, stories, visuals — fragments of imagination encoded into one world.</p>
+        <a class="hero-scroll" href="#about">Explore <i></i></a>
+      </div>
+    </section>
 
-            <!-- ARTISTS -->
-            <div>
-                <p style="font-size: 0.8rem; color: #999; margin-bottom: 10px;">ARTISTS</p>
+    <section id="about" class="petal-section intro-section fade-in">
+      <div class="section-number">01</div>
+      <div class="section-copy">
+        <p class="section-kicker">About</p>
+        <h2>ひとつの肩書きに、<br>収まらないための場所。</h2>
+        <p>PETAL CODE は、高宮ルアリエの音楽・物語・映像・キャラクター・企画をひとつに束ねる個人ポータルです。</p>
+        <p>作品ごとに違う色を持ちながら、ひとつの花弁のように重なり、世界を形づくっていきます。</p>
+      </div>
+    </section>
 
-                <!-- Luarie -->
-                <div class="artist-item">
-                    <a href="luarie.html" target="content-frame" class="sidebar-link accordion-trigger"
-                        data-target="luarie">Luarie Takamiya</a>
-                    <div id="links-luarie" class="sidebar-subnav">
-                        <a href="https://www.youtube.com/@LuarieTakamiya" target="_blank"
-                            class="sidebar-link">YouTube</a>
-                        <a href="https://aisa.radioalps.com/music/artist/luarietakamiya" target="_blank"
-                            class="sidebar-link">AISA RADIO ALPS</a>
-                        <a href="https://x.com/LuarieTakamiya" target="_blank" class="sidebar-link">X（旧Twitter）</a>
-                        <a href="https://www.tunecore.co.jp/artists/LuarieTakamiya" target="_blank"
-                            class="sidebar-link">TuneCore</a>
-                        <a href="https://open.spotify.com/intl-ja/artist/35g3Gr6wUAXOqpVkUyCbnI" target="_blank"
-                            class="sidebar-link">Spotify</a>
-                    </div>
-                </div>
+    <section id="projects" class="petal-section projects-section">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">Projects</p>
+          <h2>Selected Worlds</h2>
+        </div>
+        <p>進行中の作品・企画・世界観。</p>
+      </div>
 
-                <!-- Ishtar -->
-                <div class="artist-item">
-                    <a href="ishtar.html" target="content-frame" class="sidebar-link accordion-trigger"
-                        data-target="ishtar">ISHTAR</a>
-                    <div id="links-ishtar" class="sidebar-subnav">
-                        <!-- Placeholder -->
-                    </div>
-                </div>
+      <div class="project-grid">
+        <a class="project-card fade-in" href="luarie.html">
+          <span class="project-index">01</span>
+          <div>
+            <p class="project-type">Artist / Creator</p>
+            <h3>Luarie</h3>
+            <p>音楽、歌詞、映像、物語。活動の中心となるクリエイター／アーティスト。</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
 
-                <!-- Kengo -->
-                <div class="artist-item">
-                    <a href="kengo.html" target="content-frame" class="sidebar-link accordion-trigger"
-                        data-target="kengo">KENGO SAKURAZAKA</a>
-                    <div id="links-kengo" class="sidebar-subnav">
-                        <!-- Placeholder -->
-                    </div>
-                </div>
-            </div>
+        <div class="project-card fade-in">
+          <span class="project-index">02</span>
+          <div>
+            <p class="project-type">Story / Visual Project</p>
+            <h3>3-Sync</h3>
+            <p>音楽と物語、キャラクターが同期するオリジナルプロジェクト。</p>
+          </div>
+          <span class="status">PROJECT</span>
+        </div>
 
-            <!-- GAMES -->
-            <div style="margin-top: 22px;">
-                <p style="font-size: 0.8rem; color: #999; margin-bottom: 10px;">GAMES</p>
-                <!-- ORBITAL -->
-                <div class="artist-item">
-                    <a href="#" class="sidebar-link accordion-trigger" data-target="orbital">ORBITAL</a>
-                    <div id="links-orbital" class="sidebar-subnav">
-                        <a href="https://luarietakamiya-dotcom.github.io/ORBITAL/" target="_blank"
-                            class="sidebar-link">Play</a>
-                        <a href="https://github.com/luarietakamiya-dotcom/ORBITAL" target="_blank"
-                            class="sidebar-link">Download</a>
-                    </div>
-                </div>
-            </div>
+        <div class="project-card fade-in">
+          <span class="project-index">03</span>
+          <div>
+            <p class="project-type">Band / New Series</p>
+            <h3>RAB!T</h3>
+            <p>別の街、別の音、別の生き方から始まる新しいバンドプロジェクト。</p>
+          </div>
+          <span class="status">PROJECT</span>
+        </div>
 
-            <!-- Privacy/Terms (Global) -->
-            <div style="margin-top: 40px; font-size: 0.75rem; color:#999; line-height:1.6;">
-                <a href="privacy.html" target="content-frame">Privacy</a> /
-                <a href="terms.html" target="content-frame">Terms</a>
-            </div>
-        </nav>
-    </aside>
+        <a class="project-card fade-in" href="home.html">
+          <span class="project-index">04</span>
+          <div>
+            <p class="project-type">Creative Label</p>
+            <h3>Celestial Pulse Line</h3>
+            <p>音楽とビジュアルを作品体験として束ねるクリエイティブレーベル。</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
 
-    <!-- Right Side Content Frame -->
-    <iframe name="content-frame" src="home.html" class="main-frame"></iframe>
+    <section id="music" class="petal-section music-section fade-in">
+      <div class="music-panel">
+        <p class="section-kicker">Music</p>
+        <h2>Listen to Luarie</h2>
+        <p>配信楽曲、映像作品、最新の活動はこちらから。</p>
+        <div class="button-row">
+          <a href="https://www.youtube.com/@LuarieTakamiya" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.tunecore.co.jp/artists/LuarieTakamiya" target="_blank" rel="noopener">TuneCore</a>
+          <a href="https://open.spotify.com/intl-ja/artist/35g3Gr6wUAXOqpVkUyCbnI" target="_blank" rel="noopener">Spotify</a>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const triggers = document.querySelectorAll('.accordion-trigger');
+    <section id="links" class="petal-section links-section fade-in">
+      <p class="section-kicker">Connect</p>
+      <h2>Follow the petals.</h2>
+      <div class="link-list">
+        <a href="https://x.com/LuarieTakamiya" target="_blank" rel="noopener"><span>X / Twitter</span><b>↗</b></a>
+        <a href="https://www.youtube.com/@LuarieTakamiya" target="_blank" rel="noopener"><span>YouTube</span><b>↗</b></a>
+        <a href="https://aisa.radioalps.com/music/artist/luarietakamiya" target="_blank" rel="noopener"><span>AISA RADIO ALPS</span><b>↗</b></a>
+      </div>
+    </section>
+  </main>
 
-            triggers.forEach(trigger => {
-                trigger.addEventListener('click', (e) => {
-                    const targetId = trigger.getAttribute('data-target');
-                    const submenu = document.getElementById('links-' + targetId);
+  <footer class="petal-footer">
+    <div>
+      <span class="footer-brand">PETAL CODE</span>
+      <span>Luarie Official Site</span>
+    </div>
+    <div class="footer-meta">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <span>© Luarie Takamiya</span>
+    </div>
+  </footer>
 
-                    if (submenu) {
-                        // Toggle current
-                        if (submenu.classList.contains('open')) {
-                            submenu.classList.remove('open');
-                        } else {
-                            // Close others
-                            document.querySelectorAll('.sidebar-subnav').forEach(el => {
-                                el.classList.remove('open');
-                            });
-                            // Open this one
-                            submenu.classList.add('open');
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+  <script src="script.js?v=petal1"></script>
 </body>
-
 </html>
