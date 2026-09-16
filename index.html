@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="petal.css?v=petal2">
+  <link rel="stylesheet" href="petal-extras.css?v=1">
 </head>
 <body class="petal-site">
   <header class="petal-header">
     <a class="brand" href="#top" aria-label="PETAL CODE home">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <img class="brand-symbol" src="assets/petal-mark.png" alt="" aria-hidden="true">
       <span class="brand-name">PETAL CODE</span>
     </a>
     <nav class="petal-nav" aria-label="Main navigation">
@@ -64,13 +65,33 @@
 
     <section id="music" class="petal-section music-section fade-in"><div class="music-panel"><p class="section-kicker">Music</p><h2>Listen to Luarie</h2><p>配信楽曲、映像作品、最新の活動はこちらから。</p><div class="button-row"><a href="https://www.youtube.com/@LuarieTakamiya" target="_blank" rel="noopener">YouTube</a><a href="https://www.tunecore.co.jp/artists/LuarieTakamiya" target="_blank" rel="noopener">TuneCore</a><a href="https://open.spotify.com/intl-ja/artist/35g3Gr6wUAXOqpVkUyCbnI" target="_blank" rel="noopener">Spotify</a></div></div></section>
 
-    <section id="friends" class="petal-section links-section fade-in">
+    <section id="friends" class="petal-section friends-section fade-in">
       <p class="section-kicker">Friends / Link</p>
-      <h2>Connected worlds.</h2>
-      <div class="link-list">
-        <a href="https://nera-observatory.netlify.app/" target="_blank" rel="noopener">
-          <span><small>External / Friend Site</small><br>NERA OFFICIAL OBSERVATORY</span><b>↗</b>
-        </a>
+      <h2>Connected petals.</h2>
+
+      <div class="friend-accordion">
+        <details class="friend-item">
+          <summary>
+            <div>
+              <span class="friend-type">External / Friend Site</span>
+              <strong>NERA OFFICIAL OBSERVATORY</strong>
+            </div>
+            <span class="friend-toggle" aria-hidden="true"></span>
+          </summary>
+
+          <div class="friend-content">
+            <a class="friend-image" href="https://nera-observatory.netlify.app/" target="_blank" rel="noopener">
+              <img src="assets/nera.jpg" alt="NERA OFFICIAL OBSERVATORY">
+            </a>
+
+            <div class="friend-info">
+              <p class="friend-label">NERA Official Site</p>
+              <h3>NERA OFFICIAL OBSERVATORY</h3>
+              <p>現実の、その先へ――。<br>NERAの世界を観測するオフィシャルサイト。</p>
+              <a class="friend-button" href="https://nera-observatory.netlify.app/" target="_blank" rel="noopener">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </details>
       </div>
     </section>
 
