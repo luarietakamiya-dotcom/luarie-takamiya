@@ -16,3 +16,12 @@ if ('IntersectionObserver' in window) {
 window.addEventListener('load', () => {
   document.querySelectorAll('.hero .reveal').forEach((el) => el.classList.add('is-visible'));
 });
+document.querySelectorAll('img').forEach((img) => {
+  const applyFallback = () => {
+    img.style.display = 'none';
+    const parent = img.parentElement;
+    if (parent) parent.classList.add('is-fallback');
+  };
+  if (img.complete && !img.naturalWidth) applyFallback();
+  img.addEventListener('error', applyFallback, { once:true });
+});
