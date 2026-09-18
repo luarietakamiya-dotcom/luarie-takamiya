@@ -110,3 +110,38 @@
   .friend-content { grid-template-columns: 1fr; gap: 26px; padding-bottom: 38px; }
   .friend-info h3 { font-size: 36px; }
 }
+
+.friend-wordmark {
+  min-height: 320px;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  padding: 36px;
+  text-align: center;
+  color: #f8f6f2;
+  background:
+    radial-gradient(circle at 75% 20%, rgba(255,255,255,.14), transparent 26%),
+    linear-gradient(135deg, #1b1b1c, #4b4544);
+}
+.friend-wordmark span {
+  font-family: var(--petal-serif);
+  font-size: clamp(42px, 7vw, 86px);
+  line-height: .9;
+  letter-spacing: .02em;
+}
+.friend-wordmark small {
+  font-family: var(--petal-sans);
+  font-size: 9px;
+  letter-spacing: .3em;
+  opacity: .7;
+}
+.friend-wordmark--makoto {
+  background:
+    radial-gradient(circle at 78% 20%, rgba(223,193,203,.34), transparent 27%),
+    linear-gradient(140deg, #2a2026, #79606a);
+}
+.friend-wordmark--abcr {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,255,255,.16), transparent 24%),
+    linear-gradient(140deg, #111, #3b3d42);
+}
