@@ -39,7 +39,7 @@ img{display:block;width:100%}
   position:relative;min-height:100svh;overflow:hidden;background:#7890a2;color:#fff;
 }
 .hero-image-wrap{position:absolute;inset:0}
-.hero-image{height:100%;object-fit:cover;object-position:center 25%}
+.hero-image{height:100%;object-fit:cover;object-position:center 12%}
 .hero-shade{
   position:absolute;inset:0;
   background:
@@ -116,7 +116,7 @@ img{display:block;width:100%}
 @media(max-width:900px){
   .nav{display:none}
   .site-header{height:64px}
-  .hero-image{object-position:58% 22%}
+  .hero-image{object-position:58% 14%}
   .hero-shade{background:linear-gradient(0deg,rgba(4,6,8,.65),rgba(4,6,8,.03) 70%)}
   .hero-copy{left:24px;bottom:92px}
   .hero h1{font-size:28vw}
