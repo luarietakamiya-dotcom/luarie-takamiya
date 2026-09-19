@@ -296,3 +296,31 @@ img{display:block;width:100%}
   .look-list{grid-template-columns:1fr}
   .look-image img{aspect-ratio:4 / 5}
 }
+
+/* PARALLAX management mark: symbol only */
+.agency-logo-only{
+  display:grid;
+  place-items:center;
+  min-height:420px;
+  grid-template-rows:1fr;
+  padding:clamp(48px,7vw,96px);
+}
+.agency-logo-only .agency-mark{
+  width:min(430px,78%);
+  max-height:360px;
+  margin:0;
+  transition:transform .35s ease, opacity .35s ease;
+}
+.agency-logo-only:hover .agency-mark{
+  transform:scale(1.025);
+  opacity:.86;
+}
+@media(max-width:900px){
+  .agency-logo-only{
+    min-height:300px;
+    padding:50px 0 10px;
+  }
+  .agency-logo-only .agency-mark{
+    width:min(300px,62vw);
+  }
+}
