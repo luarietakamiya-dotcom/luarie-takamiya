@@ -145,3 +145,19 @@
     radial-gradient(circle at 20% 15%, rgba(255,255,255,.16), transparent 24%),
     linear-gradient(140deg, #111, #3b3d42);
 }
+
+/* Preserve the proportions and contrast of agency logos. */
+.friend-image--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(220px, 28vw, 320px);
+  padding: clamp(24px, 5vw, 48px);
+  background: #fff;
+}
+.friend-image--logo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
